@@ -6,6 +6,7 @@
     try {
         $pdo = new PDO($dns,$user,$pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (Exception $e) {
+        
+    } catch (PDOException $e) {
         echo "Erreur ".$e->getMessage();
     }

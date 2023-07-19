@@ -1,0 +1,15 @@
+textarea {
+    border: 1px solid #ccc; /* Bordure grise */
+    background-color: #f0f0f0; /* Couleur de fond */
+    color: #000; /* Couleur du texte */
+    font-family: Arial, sans-serif; /* Police du texte */
+    font-size: 14px; /* Taille de la police */
+    line-height: 1.5; /* Hauteur de ligne pour espacer les lignes */
+    padding: 10px; /* Marge intérieure pour espacer le texte du bord */
+    width: 400px; /* Largeur de la zone de texte */
+    height: 200px; /* Hauteur de la zone de texte */
+}
+label{
+    font-size: 30px;
+    font-weight: bold;
+}

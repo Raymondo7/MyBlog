@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajouter des champs de texte au formulaire</title>
+</head>
+<body>
+    <h2>Nouveau formulaire avec champs de texte</h2>
+    <button onclick="ajouterChampTexte()">Ajouter un champ de texte</button>
+    <form id="monFormulaire">
+        <!-- Conteneur où les nouveaux champs de texte seront ajoutés -->
+    </form>
+
+    <script>
+        // Fonction pour ajouter un nouveau champ de texte au formulaire
+        function ajouterChampTexte() {
+            var formulaire = document.getElementById("monFormulaire");
+            var nouveauChamp = document.createElement("input");
+            nouveauChamp.type = "text";
+            formulaire.appendChild(nouveauChamp);
+            formulaire.appendChild(document.createElement("br")); // Ajouter un saut de ligne après chaque champ de texte
+        }
+    </script>
+
+    <style>
+        /* Style pour le formulaire */
+        form {
+            margin-top: 10px;
+        }
+
+        /* Style pour les champs de texte */
+        input[type="text"] {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</body>
+</html>
